@@ -29,8 +29,8 @@ class LoginActivity : AppCompatActivity() {
             toast("Sign up clicked")
         }
         viewModel = ViewModelProviders.of(
-                this,
-                LoginViewModel.LoginViewModelFactory(LoginInteractor())
+            this,
+            LoginViewModel.LoginViewModelFactory(LoginInteractor())
         )[LoginViewModel::class.java]
         viewModel.loginState.observe(::getLifecycle, ::updateUi)
     }
@@ -38,8 +38,9 @@ class LoginActivity : AppCompatActivity() {
     private fun interactions() {
         loginBtn.setOnClickListener {
             viewModel.onLoginClicked(
-                    emailEt.editText?.text.toString(),
-                    passwordEt.editText?.text.toString())
+                emailEt.text.toString(),
+                passwordEt.text.toString()
+            )
         }
         forgotPasswordTv.setOnClickListener { toast("Forgot password clicked") }
     }
@@ -55,8 +56,8 @@ class LoginActivity : AppCompatActivity() {
         progress.visibility = View.GONE
         when (renderState) {
             LoginState.SUCCESS -> toast("Success")
-            LoginState.WRONG_EMAIL -> emailEt.error = getString(R.string.invalid_email_address)
-            LoginState.WRONG_PASSWORD -> passwordEt.error = getString(R.string.invalid_password)
+            LoginState.WRONG_EMAIL -> emailEtLayout.error = getString(R.string.invalid_email_address)
+            LoginState.WRONG_PASSWORD -> passwordEtLayout.error = getString(R.string.invalid_password)
         }
     }
 }
