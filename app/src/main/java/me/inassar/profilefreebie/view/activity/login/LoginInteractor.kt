@@ -1,4 +1,4 @@
-package me.inassar.profilefreebie.view
+package me.inassar.profilefreebie.view.activity.login
 
 import me.inassar.profilefreebie.postDelayed
 

@@ -7,4 +7,12 @@
     <string name="password">Password</string>
     <string name="invalid_password">Invalid password</string>
     <string name="forgot_your_password">Forgot your password?</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

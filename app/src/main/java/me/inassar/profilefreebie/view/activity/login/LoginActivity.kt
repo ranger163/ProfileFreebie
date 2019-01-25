@@ -1,5 +1,6 @@
-package me.inassar.profilefreebie.view
+package me.inassar.profilefreebie.view.activity.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import me.inassar.profilefreebie.ScreenState
 import me.inassar.profilefreebie.model.LoginState
 import me.inassar.profilefreebie.toast
 import me.inassar.profilefreebie.toolbar
+import me.inassar.profilefreebie.view.activity.home.HomeActivity
 import me.inassar.profilefreebie.viewmodel.LoginViewModel
 
 class LoginActivity : AppCompatActivity() {
@@ -25,12 +27,12 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        toolbar(toolBar, getString(R.string.login), false) {
+        toolbar(toolBar, getString(R.string.login), this) {
             toast("Sign up clicked")
         }
         viewModel = ViewModelProviders.of(
-            this,
-            LoginViewModel.LoginViewModelFactory(LoginInteractor())
+                this,
+                LoginViewModel.LoginViewModelFactory(LoginInteractor())
         )[LoginViewModel::class.java]
         viewModel.loginState.observe(::getLifecycle, ::updateUi)
     }
@@ -38,8 +40,8 @@ class LoginActivity : AppCompatActivity() {
     private fun interactions() {
         loginBtn.setOnClickListener {
             viewModel.onLoginClicked(
-                emailEt.text.toString(),
-                passwordEt.text.toString()
+                    emailEt.text.toString(),
+                    passwordEt.text.toString()
             )
         }
         forgotPasswordTv.setOnClickListener { toast("Forgot password clicked") }
@@ -55,7 +57,10 @@ class LoginActivity : AppCompatActivity() {
     private fun processLoginState(renderState: LoginState) {
         progress.visibility = View.GONE
         when (renderState) {
-            LoginState.SUCCESS -> toast("Success")
+            LoginState.SUCCESS -> {
+                startActivity(Intent(this, HomeActivity::class.java))
+                finish()
+            }
             LoginState.WRONG_EMAIL -> emailEtLayout.error = getString(R.string.invalid_email_address)
             LoginState.WRONG_PASSWORD -> passwordEtLayout.error = getString(R.string.invalid_password)
         }

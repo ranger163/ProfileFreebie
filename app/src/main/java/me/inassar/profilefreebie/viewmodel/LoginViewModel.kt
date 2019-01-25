@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import me.inassar.profilefreebie.ScreenState
 import me.inassar.profilefreebie.model.LoginState
-import me.inassar.profilefreebie.view.LoginInteractor
+import me.inassar.profilefreebie.view.activity.login.LoginInteractor
 
 class LoginViewModel(val loginInteractor: LoginInteractor) : ViewModel(),
         LoginInteractor.onLoginFinishedListener {
