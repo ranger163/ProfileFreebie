@@ -1,8 +1,12 @@
 package me.inassar.profilefreebie
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.os.Build
 import android.os.Handler
+import android.text.Html.fromHtml
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -34,4 +38,14 @@ fun AppCompatActivity.toolbar(toolbar: Toolbar, title: String, context: Context,
 
 fun Context.toast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+@SuppressLint("SetTextI18n")
+fun TextView.resize() {
+    if (lineCount < 3) {
+        text = if (Build.VERSION.SDK_INT >= 24)
+            fromHtml("${text!!} <font color='blue'>less</font>", 0)
+        else
+            fromHtml("${text!!} <font color='blue'>less</font>")
+    }
 }

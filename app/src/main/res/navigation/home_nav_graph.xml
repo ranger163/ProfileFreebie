@@ -12,6 +12,6 @@
     <fragment android:id="@+id/searchFragmentDest" android:name="me.inassar.profilefreebie.view.fragment.SearchFragment"
               android:label="fragment_search" tools:layout="@layout/fragment_search"/>
     <fragment android:id="@+id/profileFragmentDest"
-              android:name="me.inassar.profilefreebie.view.fragment.ProfileFragment"
+              android:name="me.inassar.profilefreebie.view.fragment.profile.ProfileFragment"
               android:label="profile_fragment" tools:layout="@layout/profile_fragment"/>
 </navigation>

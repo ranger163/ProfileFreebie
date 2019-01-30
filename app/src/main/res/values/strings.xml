@@ -15,4 +15,22 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pro">PRO</string>
+    <string name="follow">Follow</string>
+    <string name="message">Message</string>
+    <string name="ahmed_nassar">Ahmed Nassar</string>
+    <string name="android_developer">Android developer</string>
+    <string name="_249">249</string>
+    <string name="likes">Likes</string>
+    <string name="_127k">127K</string>
+    <string name="_521">521</string>
+    <string name="following">Following</string>
+    <string name="about">About</string>
+    <string name="about_me">"I’m an innovated mid-level Android developer, where I spend most of my time crafting, working, designing, developing, testing and maintaining awesome projects.
+I work with clients to design apps with clean, usable interfaces while meeting the requirements, clean interface = happy users.
+
+I’ve solid understanding of full mobile and software development life cycles, UIX, and Agile methodologies.
+Dedicated to continuously developing, implementing, and adopting new technologies to maximize development efficiency and produce innovative applications."</string>
+    <string name="see_all">See all</string>
+    <string name="photos">Photos</string>
 </resources>

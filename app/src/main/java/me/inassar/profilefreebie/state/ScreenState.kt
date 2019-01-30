@@ -1,4 +1,4 @@
-package me.inassar.profilefreebie
+package me.inassar.profilefreebie.state
 
 sealed class ScreenState<out T> {
     object Loading : ScreenState<Nothing>()

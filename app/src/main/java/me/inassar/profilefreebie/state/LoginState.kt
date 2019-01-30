@@ -1,4 +1,4 @@
-package me.inassar.profilefreebie.model
+package me.inassar.profilefreebie.state
 
 enum class LoginState {
     SUCCESS,

@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import me.inassar.profilefreebie.ScreenState
-import me.inassar.profilefreebie.model.LoginState
+import me.inassar.profilefreebie.state.ScreenState
+import me.inassar.profilefreebie.state.LoginState
 import me.inassar.profilefreebie.view.activity.login.LoginInteractor
 
 class LoginViewModel(val loginInteractor: LoginInteractor) : ViewModel(),

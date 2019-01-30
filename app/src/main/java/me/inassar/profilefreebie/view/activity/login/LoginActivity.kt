@@ -6,10 +6,11 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.loading_layout.*
 import kotlinx.android.synthetic.main.toolbar.*
 import me.inassar.profilefreebie.R
-import me.inassar.profilefreebie.ScreenState
-import me.inassar.profilefreebie.model.LoginState
+import me.inassar.profilefreebie.state.LoginState
+import me.inassar.profilefreebie.state.ScreenState
 import me.inassar.profilefreebie.toast
 import me.inassar.profilefreebie.toolbar
 import me.inassar.profilefreebie.view.activity.home.HomeActivity
