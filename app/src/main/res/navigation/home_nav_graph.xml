@@ -7,7 +7,7 @@
     <fragment android:id="@+id/homeFragmentDest" android:name="me.inassar.profilefreebie.view.fragment.HomeFragment"
               android:label="fragment_home" tools:layout="@layout/fragment_home"/>
     <fragment android:id="@+id/friendsFragmentDest"
-              android:name="me.inassar.profilefreebie.view.fragment.FriendsFragment"
+              android:name="me.inassar.profilefreebie.view.fragment.friends.FriendsFragment"
               android:label="fragment_friends" tools:layout="@layout/fragment_friends"/>
     <fragment android:id="@+id/searchFragmentDest" android:name="me.inassar.profilefreebie.view.fragment.SearchFragment"
               android:label="fragment_search" tools:layout="@layout/fragment_search"/>

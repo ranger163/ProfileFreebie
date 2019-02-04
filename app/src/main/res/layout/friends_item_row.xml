@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/friendImgContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/friendImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@color/colorPrimary" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/friendTypeTV"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/blue_light_btn_bg"
+        android:gravity="center"
+        android:text="@string/pro"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/friendNameTv"
+        app:layout_constraintStart_toEndOf="@+id/friendNameTv"
+        app:layout_constraintTop_toTopOf="@+id/friendNameTv"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <TextView
+        android:id="@+id/friendNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/friendTypeTV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/friendImgContainer"
+        app:layout_constraintTop_toTopOf="@+id/friendImgContainer"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/friendsSpecialityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/friendNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/friendNameTv"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/friendsFollowersTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/followers"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/friendsFollowingsTv"
+        app:layout_constraintStart_toStartOf="@+id/friendsSpecialityTv"
+        app:layout_constraintTop_toBottomOf="@+id/friendsSpecialityTv" />
+
+    <TextView
+        android:id="@+id/friendsFollowingsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/following"
+        android:textColor="@color/colorGreyDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/friendsFollowersTv"
+        app:layout_constraintStart_toEndOf="@+id/friendsFollowersTv"
+        app:layout_constraintTop_toTopOf="@+id/friendsFollowersTv" />
+
+    <Button
+        android:id="@+id/friendsFollowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:minWidth="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/blue_dark_btn_bg"
+        android:text="@string/follow"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/friendImgContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/friendImgContainer" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/friendsFollowBtn"
+        app:layout_constraintStart_toStartOf="@+id/friendNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/friendImgContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

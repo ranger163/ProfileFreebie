@@ -33,4 +33,13 @@ I’ve solid understanding of full mobile and software development life cycles, 
 Dedicated to continuously developing, implementing, and adopting new technologies to maximize development efficiency and produce innovative applications."</string>
     <string name="see_all">See all</string>
     <string name="photos">Photos</string>
+    <string name="followers">Followers</string>
+    <string name="followed">Followed</string>
+    <string name="search">Search</string>
+    <array name="segmented_controller">
+        <item>Friends</item>
+        <item>Followers</item>
+        <item>Followings</item>
+    </array>
+
 </resources>
