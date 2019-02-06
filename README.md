@@ -27,6 +27,10 @@ Install as usual,
 * Happy coding.
 * Support me by staring this repo and following me for more projects.
 
+## APK
+
+You can try the apk on your device from [here](https://drive.google.com/open?id=1RcmCasurLIfn4zE-CeloOivPy-9Fbqdi)
+
 ## Screen Shoots
 
 |    Preview   |
@@ -39,3 +43,7 @@ Install as usual,
 
 ## Hire Me
 I'm ready for a full-time or a freelancing job, just drop me an email [here](https://www.inassar.me) and let's do our chating.
+
+## License
+Copyright © 2018 Ahmed Nassar
+Licensed under the [MIT License](LICENSE)
