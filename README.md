@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a working project for a picked up free design from [uplabs.com](https://www.uplabs.com/posts/profile-freebie) website written
+This is a [PROJECT IVORY](https://github.com/ranger163/ProjectIvory) repository for a picked up free design from [uplabs.com](https://www.uplabs.com/posts/profile-freebie) website written
 in kotlin using MVVM design pattern thatcontaines3 screens "Login, Profile and Friends" screens.I've implemented each screen and it's
 functions "NOT ONLY DESIGN OR XML FILES"and made it ready to be customized on your project if you wish to use it just clone
 this project and start customizing.
